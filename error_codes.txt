@@ -1,0 +1,14 @@
+greška broj 00 - greška se pojavlju kada nij emoguce azurirati tablicu
+greška broj 10 - greške veazne za bazu podataka
+greška broj 20 - ova greška se pojavljuje kada nije moguće kopirati sliku i asset folder ovaj error je u klasi "MovieHandlerPanel"
+greška broj 30 - ova greška se pojavljuje kada nije moguće drag and dropati elemente iz jedne liste u drugu
+greška broj 40 - (XMLStreamException) ova greška se pojavljuje kada nije moguće nije moguce napraviti StackParser, metoda koja baca ovaj exception je 
+					"createStaxParser()" u klasi "ParserFactorx"
+greška broj 50 - (IOException) ova greška se pojavljuje kada nije moguće napraviti konekciju,  metoda koja baca ovaj exception je 
+					"getHttpUrlConnection()" u klasi "UrlConnectionFactory"
+greška broj 60 - (InvalidUserTypeException) ova greška se pojavljuje kada nije moguće dohvatiti tip korinika. 
+					Odnosni kada tip korisnik ane postoji. Ovo se ne bi smjelo nikada pojaviti
+greška broj 70 - (JAXBException) ova greška se pojavljuje kada nije moguće marshallati xml dokument
+greška broj 80 - ova greška se pojavljuje kada nije moguće obrisati sliku za vrijeme azuriranj 
+
+greška broj 100 - ukoliko dode do ove greške potrebno ej pogledati log, zbog cega je doslo do greške te preventirati u novijoj verziji aplikacije.					
