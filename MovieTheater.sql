@@ -67,10 +67,48 @@ create table ClientUser(
 go
 
 
+
+-------------------------------
+------Inserting basic data-----
+-------------------------------
 insert into UserRole ([Name]) values ('admin')
 insert into UserRole ([Name])  values ('user')
 insert into MovieRole ([Name])  values ('director')
 insert into MovieRole ([Name])  values ('actor')
+go
+
+insert Movie ([Title], [OriginalTitle], [Description], [Duration], [PublishedDate], [StartDate], [PicturePath]) values
+('Title 1', 'Original title 1', 'Description 1', 150, '2021-06-09', '2021-06-09', 'picture path 1' )
+---index 1 
+insert Movie ([Title], [OriginalTitle], [Description], [Duration], [PublishedDate], [StartDate], [PicturePath]) values
+('Title 2', 'Original title 2', 'Description 2', 150, '2021-06-09', '2021-06-09', 'picture path 2' )
+---index 2
+go
+insert Genre ([Name]) values ('Horor')
+---index 1
+insert Genre ([Name]) values ('Triler')
+---index 2
+insert Genre ([Name]) values ('Drama')
+---index 3
+go
+insert MovieGenre ([GenreID], [MovieID]) values (1, 1)
+insert MovieGenre ([GenreID], [MovieID]) values (3, 1)
+insert MovieGenre ([GenreID], [MovieID]) values (2, 2)
+insert MovieGenre ([GenreID], [MovieID]) values (1, 2)
+go
+insert PersonData ([FirstName], [MiddleName], [LastName]) values ('Pero', 'nema', 'Peric')
+--index 1
+insert PersonData ([FirstName], [MiddleName], [LastName]) values ('Iva', 'nema', 'Ivic')
+---index 2
+insert PersonData ([FirstName], [MiddleName], [LastName]) values ('Maja', 'nema', 'Majic')
+---index 3
+go
+insert MoviePerson ([PersonDataID], [MovieRoleID], [MovieID]) values (1, 1, 1)
+insert MoviePerson ([PersonDataID], [MovieRoleID], [MovieID]) values (1, 2, 1)
+insert MoviePerson ([PersonDataID], [MovieRoleID], [MovieID]) values (1, 2, 2)
+insert MoviePerson ([PersonDataID], [MovieRoleID], [MovieID]) values (2, 2, 1)
+insert MoviePerson ([PersonDataID], [MovieRoleID], [MovieID]) values (2, 1, 2)
+insert MoviePerson ([PersonDataID], [MovieRoleID], [MovieID]) values (2, 2, 2)
 go
 
 ---------------------
